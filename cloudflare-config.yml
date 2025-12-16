@@ -1,0 +1,7 @@
+tunnel: dicoding-forum
+credentials-file: /home/ubuntu/.cloudflared/db2ccb82-b1d1-4391-99c0-a79f825e1d6f.json
+
+ingress:
+  - hostname: dicoding-aws-backend.tek.web.id
+    service: http://localhost:80
+  - service: http_status:404
